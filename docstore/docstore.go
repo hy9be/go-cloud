@@ -26,10 +26,10 @@ import (
 	"sync"
 	"unicode/utf8"
 
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/gcerr"
-	"gocloud.dev/internal/oc"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/gcerr"
+	"github.com/hy9be/gocloud/internal/oc"
 )
 
 // A Document is a set of field-value pairs. One or more fields, called the key
@@ -51,7 +51,7 @@ type Collection struct {
 	closed bool
 }
 
-const pkgName = "gocloud.dev/docstore"
+const pkgName = "github.com/hy9be/gocloud/docstore"
 
 var (
 	latencyMeasure = oc.LatencyMeasure(pkgName)
@@ -146,6 +146,14 @@ type Action struct {
 	doc        Document
 	fieldpaths []FieldPath // paths to retrieve, for Get
 	mods       Mods        // modifications to make, for Update
+}
+
+// An ActionListError is returned by ActionList.Do. It contains all the errors
+// encountered while executing the ActionList, and the positions of the corresponding
+// actions.
+type ActionListError []struct {
+	Index int
+	Err   error
 }
 
 func (l *ActionList) add(a *Action) *ActionList {
@@ -273,14 +281,6 @@ type Mods map[FieldPath]interface{}
 // The amount must be an integer or floating-point value.
 func Increment(amount interface{}) interface{} {
 	return driver.IncOp{amount}
-}
-
-// An ActionListError is returned by ActionList.Do. It contains all the errors
-// encountered while executing the ActionList, and the positions of the corresponding
-// actions.
-type ActionListError []struct {
-	Index int
-	Err   error
 }
 
 // TODO(jba): use xerrors formatting.

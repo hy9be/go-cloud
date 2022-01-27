@@ -1,3 +1,7 @@
+# A gocloud.dev fork for being used as a Python module via GoPy
+
+More details to come...
+
 # The Go Cloud Development Kit (Go CDK)
 
 _Write once, run on any cloud ☁️_

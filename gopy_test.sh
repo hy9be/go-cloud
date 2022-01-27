@@ -1,12 +1,12 @@
 cd $HOME/Codes/playground/go/gopy
 
-playground_folder="gocloud-hy9be"
+playground_folder="gocloud"
 readonly playground_folder
 
-rm -rf playground_folder
+rm -rf $playground_folder
 
-mkdir playground_folder
-cd playground_folder
+mkdir $playground_folder
+cd $playground_folder
 
 go mod init hy9be/gocloud
 go get github.com/hy9be/gocloud

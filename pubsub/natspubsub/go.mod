@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-module gocloud.dev/pubsub/natspubsub
+module github.com/hy9be/gocloud/pubsub/natspubsub
 
 go 1.12
 
@@ -20,7 +20,7 @@ require (
 	github.com/google/go-cmp v0.5.6
 	github.com/nats-io/nats-server/v2 v2.3.4
 	github.com/nats-io/nats.go v1.13.0
-	gocloud.dev v0.24.0
+	github.com/hy9be/gocloud v0.24.0
 )
 
-replace gocloud.dev => ../../
+replace github.com/hy9be/gocloud => ../../

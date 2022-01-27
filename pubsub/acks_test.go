@@ -23,10 +23,10 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/gcerr"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/gcerr"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/driver"
 )
 
 type ackingDriverSub struct {

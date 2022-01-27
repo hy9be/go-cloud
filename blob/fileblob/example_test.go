@@ -23,8 +23,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gocloud.dev/blob"
-	"gocloud.dev/blob/fileblob"
+	"github.com/hy9be/gocloud/blob"
+	"github.com/hy9be/gocloud/blob/fileblob"
 )
 
 func ExampleOpenBucket() {

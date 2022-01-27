@@ -21,10 +21,10 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"gocloud.dev/internal/testing/setup"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/driver"
-	"gocloud.dev/pubsub/drivertest"
+	"github.com/hy9be/gocloud/internal/testing/setup"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/driver"
+	"github.com/hy9be/gocloud/pubsub/drivertest"
 
 	common "github.com/Azure/azure-amqp-common-go/v3"
 	servicebus "github.com/Azure/azure-service-bus-go"

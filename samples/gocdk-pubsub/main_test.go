@@ -20,8 +20,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmdtest"
+	"github.com/hy9be/gocloud/internal/testing/setup"
 	"github.com/streadway/amqp"
-	"gocloud.dev/internal/testing/setup"
 )
 
 // Requires rabbit to be running. Run pubsub/rabbitpubsub/localrabbit.sh.

@@ -21,8 +21,8 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/gcerrors"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/gcerrors"
 )
 
 type Book struct {

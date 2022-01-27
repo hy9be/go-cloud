@@ -52,17 +52,17 @@
 //  - The internal driver methods SendBatch, SendAcks and ReceiveBatch.
 // All trace and metric names begin with the package import path.
 // The traces add the method name.
-// For example, "gocloud.dev/pubsub/Topic.Send".
+// For example, "github.com/hy9be/gocloud/pubsub/Topic.Send".
 // The metrics are "completed_calls", a count of completed method calls by driver,
 // method and status (error code); and "latency", a distribution of method latency
 // by driver and method.
-// For example, "gocloud.dev/pubsub/latency".
+// For example, "github.com/hy9be/gocloud/pubsub/latency".
 //
 // To enable trace collection in your application, see "Configure Exporter" at
 // https://opencensus.io/quickstart/go/tracing.
 // To enable metric collection in your application, see "Exporting stats" at
 // https://opencensus.io/quickstart/go/metrics.
-package pubsub // import "gocloud.dev/pubsub"
+package pubsub // import "github.com/hy9be/gocloud/pubsub"
 
 import (
 	"context"
@@ -77,13 +77,13 @@ import (
 	"unicode/utf8"
 
 	"github.com/googleapis/gax-go/v2"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/gcerr"
-	"gocloud.dev/internal/oc"
-	"gocloud.dev/internal/openurl"
-	"gocloud.dev/internal/retry"
-	"gocloud.dev/pubsub/batcher"
-	"gocloud.dev/pubsub/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/gcerr"
+	"github.com/hy9be/gocloud/internal/oc"
+	"github.com/hy9be/gocloud/internal/openurl"
+	"github.com/hy9be/gocloud/internal/retry"
+	"github.com/hy9be/gocloud/pubsub/batcher"
+	"github.com/hy9be/gocloud/pubsub/driver"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -349,7 +349,7 @@ func newTopic(d driver.Topic, opts *batcher.Options) *Topic {
 	return t
 }
 
-const pkgName = "gocloud.dev/pubsub"
+const pkgName = "github.com/hy9be/gocloud/pubsub"
 
 var (
 	latencyMeasure = oc.LatencyMeasure(pkgName)

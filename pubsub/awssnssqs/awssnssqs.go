@@ -61,7 +61,7 @@
 //  - Message.BeforeSend: (V1) *sns.PublishInput for OpenSNSTopic, *sqs.SendMessageBatchRequestEntry or *sqs.SendMessageInput(deprecated) for OpenSQSTopic; (V2) *snsv2.PublishInput for OpenSNSTopicV2, sqstypesv2.SendMessageBatchRequestEntry for OpenSQSTopicV2
 //  - Message.AfterSend: (V1) *sns.PublishOutput for OpenSNSTopic, *sqs.SendMessageBatchResultEntry for OpenSQSTopic; (V2) *snsv2.PublishOutput for OpenSNSTopicV2, sqstypesv2.SendMessageBatchResultEntry for OpenSQSTopicV2
 //  - Error: (V1) awserr.Error, (V2) any error type returned by the service, notably smithy.APIError
-package awssnssqs // import "gocloud.dev/pubsub/awssnssqs"
+package awssnssqs // import "github.com/hy9be/gocloud/pubsub/awssnssqs"
 
 import (
 	"context"
@@ -88,12 +88,12 @@ import (
 	"github.com/aws/aws-sdk-go/service/sqs"
 	"github.com/aws/smithy-go"
 	"github.com/google/wire"
-	gcaws "gocloud.dev/aws"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/escape"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/batcher"
-	"gocloud.dev/pubsub/driver"
+	gcaws "github.com/hy9be/gocloud/aws"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/escape"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/batcher"
+	"github.com/hy9be/gocloud/pubsub/driver"
 )
 
 const (

@@ -25,14 +25,14 @@ import (
 	"os"
 
 	"github.com/google/subcommands"
-	"gocloud.dev/secrets"
+	"github.com/hy9be/gocloud/secrets"
 
 	// Import the secrets driver packages we want to be able to open.
-	_ "gocloud.dev/secrets/awskms"
-	_ "gocloud.dev/secrets/azurekeyvault"
-	_ "gocloud.dev/secrets/gcpkms"
-	_ "gocloud.dev/secrets/hashivault"
-	_ "gocloud.dev/secrets/localsecrets"
+	_ "github.com/hy9be/gocloud/secrets/awskms"
+	_ "github.com/hy9be/gocloud/secrets/azurekeyvault"
+	_ "github.com/hy9be/gocloud/secrets/gcpkms"
+	_ "github.com/hy9be/gocloud/secrets/hashivault"
+	_ "github.com/hy9be/gocloud/secrets/localsecrets"
 )
 
 const helpSuffix = `

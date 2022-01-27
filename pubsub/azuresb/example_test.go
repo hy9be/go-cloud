@@ -20,8 +20,8 @@ import (
 	"os"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/azuresb"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/azuresb"
 )
 
 func ExampleOpenTopic() {
@@ -58,7 +58,7 @@ func ExampleOpenTopic() {
 
 func Example_openTopicFromURL() {
 	// PRAGMA: This example is used on gocloud.dev; PRAGMA comments adjust how it is shown and can be ignored.
-	// PRAGMA: On gocloud.dev, add a blank import: _ "gocloud.dev/pubsub/azuresb"
+	// PRAGMA: On gocloud.dev, add a blank import: _ "github.com/hy9be/gocloud/pubsub/azuresb"
 	// PRAGMA: On gocloud.dev, hide lines until the next blank line.
 	ctx := context.Background()
 
@@ -109,7 +109,7 @@ func ExampleOpenSubscription() {
 
 func Example_openSubscriptionFromURL() {
 	// PRAGMA: This example is used on gocloud.dev; PRAGMA comments adjust how it is shown and can be ignored.
-	// PRAGMA: On gocloud.dev, add a blank import: _ "gocloud.dev/pubsub/azuresb"
+	// PRAGMA: On gocloud.dev, add a blank import: _ "github.com/hy9be/gocloud/pubsub/azuresb"
 	// PRAGMA: On gocloud.dev, hide lines until the next blank line.
 	ctx := context.Background()
 

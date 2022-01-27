@@ -22,8 +22,8 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/gcerr"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/gcerr"
 	"google.golang.org/protobuf/proto"
 	tspb "google.golang.org/protobuf/types/known/timestamppb"
 )

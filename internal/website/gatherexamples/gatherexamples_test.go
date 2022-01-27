@@ -328,11 +328,11 @@ func TestFormatImports(t *testing.T) {
 		{
 			name: "StdlibSeparateFromThirdParty",
 			usedPackages: map[string]string{
-				"context":                      "",
-				"fmt":                          "",
-				"log":                          "",
-				"github.com/google/go-cmp/cmp": "",
-				"gocloud.dev/blob":             "",
+				"context":                       "",
+				"fmt":                           "",
+				"log":                           "",
+				"github.com/google/go-cmp/cmp":  "",
+				"github.com/hy9be/gocloud/blob": "",
 			},
 			want: "import (\n" +
 				"\t\"context\"\n" +
@@ -340,7 +340,7 @@ func TestFormatImports(t *testing.T) {
 				"\t\"log\"\n" +
 				"\n" +
 				"\t\"github.com/google/go-cmp/cmp\"\n" +
-				"\t\"gocloud.dev/blob\"\n" +
+				"\t\"github.com/hy9be/gocloud/blob\"\n" +
 				")",
 		},
 	}

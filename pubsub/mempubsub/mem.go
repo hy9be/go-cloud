@@ -37,7 +37,7 @@
 // As
 //
 // mempubsub does not support any types for As.
-package mempubsub // import "gocloud.dev/pubsub/mempubsub"
+package mempubsub // import "github.com/hy9be/gocloud/pubsub/mempubsub"
 
 import (
 	"context"
@@ -49,9 +49,9 @@ import (
 	"sync"
 	"time"
 
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/driver"
 )
 
 func init() {

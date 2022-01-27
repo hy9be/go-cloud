@@ -20,8 +20,8 @@ import (
 	"net/url"
 	"testing"
 
-	"gocloud.dev/internal/testing/terraform"
-	"gocloud.dev/postgres"
+	"github.com/hy9be/gocloud/internal/testing/terraform"
+	"github.com/hy9be/gocloud/postgres"
 )
 
 func TestURLOpener(t *testing.T) {

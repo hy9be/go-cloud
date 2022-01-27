@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-module gocloud.dev/secrets/hashivault
+module github.com/hy9be/gocloud/secrets/hashivault
 
 go 1.12
 
@@ -32,8 +32,8 @@ require (
 	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
-	gocloud.dev v0.24.0
+	github.com/hy9be/gocloud v0.24.0
 	gopkg.in/square/go-jose.v2 v2.6.0 // indirect
 )
 
-replace gocloud.dev => ../../
+replace github.com/hy9be/gocloud => ../../

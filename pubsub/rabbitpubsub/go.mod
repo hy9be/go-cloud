@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-module gocloud.dev/pubsub/rabbitpubsub
+module github.com/hy9be/gocloud/pubsub/rabbitpubsub
 
 go 1.12
 
 require (
 	github.com/streadway/amqp v1.0.0
-	gocloud.dev v0.24.0
+	github.com/hy9be/gocloud v0.24.0
 )
 
-replace gocloud.dev => ../../
+replace github.com/hy9be/gocloud => ../../

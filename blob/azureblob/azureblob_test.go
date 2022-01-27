@@ -28,10 +28,10 @@ import (
 	"github.com/Azure/azure-pipeline-go/pipeline"
 	"github.com/Azure/azure-storage-blob-go/azblob"
 	"github.com/google/go-cmp/cmp"
-	"gocloud.dev/blob"
-	"gocloud.dev/blob/driver"
-	"gocloud.dev/blob/drivertest"
-	"gocloud.dev/internal/testing/setup"
+	"github.com/hy9be/gocloud/blob"
+	"github.com/hy9be/gocloud/blob/driver"
+	"github.com/hy9be/gocloud/blob/drivertest"
+	"github.com/hy9be/gocloud/internal/testing/setup"
 )
 
 // Prerequisites for -record mode

@@ -18,7 +18,7 @@ import (
 	"context"
 	"net/url"
 
-	"gocloud.dev/internal/openurl"
+	"github.com/hy9be/gocloud/internal/openurl"
 )
 
 // CollectionURLOpener opens a collection of documents based on a URL.

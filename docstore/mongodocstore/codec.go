@@ -20,8 +20,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/hy9be/gocloud/docstore/driver"
 	"go.mongodb.org/mongo-driver/bson/primitive"
-	"gocloud.dev/docstore/driver"
 )
 
 // Encode and decode to map[string]interface{}.

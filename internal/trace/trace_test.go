@@ -19,9 +19,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/gcerr"
 	octrace "go.opencensus.io/trace"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/gcerr"
 )
 
 func TestToStatus(t *testing.T) {

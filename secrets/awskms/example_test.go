@@ -20,8 +20,8 @@ import (
 
 	awsv2cfg "github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go/aws/session"
-	"gocloud.dev/secrets"
-	"gocloud.dev/secrets/awskms"
+	"github.com/hy9be/gocloud/secrets"
+	"github.com/hy9be/gocloud/secrets/awskms"
 )
 
 func ExampleOpenKeeper() {
@@ -69,7 +69,7 @@ func ExampleOpenKeeperV2() {
 
 func Example_openFromURL() {
 	// PRAGMA: This example is used on gocloud.dev; PRAGMA comments adjust how it is shown and can be ignored.
-	// PRAGMA: On gocloud.dev, add a blank import: _ "gocloud.dev/secrets/awskms"
+	// PRAGMA: On gocloud.dev, add a blank import: _ "github.com/hy9be/gocloud/secrets/awskms"
 	// PRAGMA: On gocloud.dev, hide lines until the next blank line.
 	ctx := context.Background()
 

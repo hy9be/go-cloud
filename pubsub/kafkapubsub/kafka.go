@@ -50,7 +50,7 @@
 //  - Message.BeforeSend: *sarama.ProducerMessage
 //  - Message.AfterSend: None
 //  - Error: sarama.ConsumerError, sarama.ConsumerErrors, sarama.ProducerError, sarama.ProducerErrors, sarama.ConfigurationError, sarama.PacketDecodingError, sarama.PacketEncodingError, sarama.KError
-package kafkapubsub // import "gocloud.dev/pubsub/kafkapubsub"
+package kafkapubsub // import "github.com/hy9be/gocloud/pubsub/kafkapubsub"
 
 import (
 	"context"
@@ -65,10 +65,10 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/batcher"
-	"gocloud.dev/pubsub/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/batcher"
+	"github.com/hy9be/gocloud/pubsub/driver"
 )
 
 var sendBatcherOpts = &batcher.Options{

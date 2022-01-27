@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"testing"
 
-	"gocloud.dev/internal/testing/terraform"
-	"gocloud.dev/mysql"
+	"github.com/hy9be/gocloud/internal/testing/terraform"
+	"github.com/hy9be/gocloud/mysql"
 )
 
 func TestOpen(t *testing.T) {

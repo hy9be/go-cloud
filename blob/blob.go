@@ -45,11 +45,11 @@
 //  - NewWriter, from creation until the call to Close.
 // All trace and metric names begin with the package import path.
 // The traces add the method name.
-// For example, "gocloud.dev/blob/Attributes".
+// For example, "github.com/hy9be/gocloud/blob/Attributes".
 // The metrics are "completed_calls", a count of completed method calls by driver,
 // method and status (error code); and "latency", a distribution of method latency
 // by driver and method.
-// For example, "gocloud.dev/blob/latency".
+// For example, "github.com/hy9be/gocloud/blob/latency".
 //
 // It also collects the following metrics:
 //  - gocloud.dev/blob/bytes_read: the total number of bytes read, by driver.
@@ -59,7 +59,7 @@
 // https://opencensus.io/quickstart/go/tracing.
 // To enable metric collection in your application, see "Exporting stats" at
 // https://opencensus.io/quickstart/go/metrics.
-package blob // import "gocloud.dev/blob"
+package blob // import "github.com/hy9be/gocloud/blob"
 
 import (
 	"bytes"
@@ -79,14 +79,14 @@ import (
 	"time"
 	"unicode/utf8"
 
+	"github.com/hy9be/gocloud/blob/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/gcerr"
+	"github.com/hy9be/gocloud/internal/oc"
+	"github.com/hy9be/gocloud/internal/openurl"
 	"go.opencensus.io/stats"
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/tag"
-	"gocloud.dev/blob/driver"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/gcerr"
-	"gocloud.dev/internal/oc"
-	"gocloud.dev/internal/openurl"
 )
 
 // Reader reads bytes from a blob.
@@ -496,7 +496,7 @@ type Bucket struct {
 	closed bool
 }
 
-const pkgName = "gocloud.dev/blob"
+const pkgName = "github.com/hy9be/gocloud/blob"
 
 var (
 	latencyMeasure      = oc.LatencyMeasure(pkgName)

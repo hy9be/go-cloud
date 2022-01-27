@@ -8,8 +8,8 @@ import (
 
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"gocloud.dev/docstore/drivertest"
-	"gocloud.dev/internal/testing/setup"
+	"github.com/hy9be/gocloud/docstore/drivertest"
+	"github.com/hy9be/gocloud/internal/testing/setup"
 )
 
 const connectionStringTemplate = "mongodb://%s:%s@%s/?connect=direct&connectTimeoutMS=3000"

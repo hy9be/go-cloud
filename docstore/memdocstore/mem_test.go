@@ -22,9 +22,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"gocloud.dev/docstore"
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/docstore/drivertest"
+	"github.com/hy9be/gocloud/docstore"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/docstore/drivertest"
 )
 
 type harness struct{}

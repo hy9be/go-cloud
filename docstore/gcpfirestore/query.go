@@ -26,8 +26,8 @@ import (
 	"strings"
 	"time"
 
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/internal/gcerr"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/internal/gcerr"
 	pb "google.golang.org/genproto/googleapis/firestore/v1"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 )

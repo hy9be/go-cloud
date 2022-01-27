@@ -15,12 +15,12 @@
 // Package driver defines interfaces to be implemented by docstore drivers, which
 // will be used by the docstore package to interact with the underlying services.
 // Application code should use package docstore.
-package driver // import "gocloud.dev/docstore/driver"
+package driver // import "github.com/hy9be/gocloud/docstore/driver"
 
 import (
 	"context"
 
-	"gocloud.dev/gcerrors"
+	"github.com/hy9be/gocloud/gcerrors"
 )
 
 // A Collection is a set of documents.

@@ -21,8 +21,8 @@ import (
 	awsv2cfg "github.com/aws/aws-sdk-go-v2/config"
 	secretsmanagerv2 "github.com/aws/aws-sdk-go-v2/service/secretsmanager"
 	"github.com/aws/aws-sdk-go/aws/session"
-	"gocloud.dev/runtimevar"
-	"gocloud.dev/runtimevar/awssecretsmanager"
+	"github.com/hy9be/gocloud/runtimevar"
+	"github.com/hy9be/gocloud/runtimevar/awssecretsmanager"
 )
 
 func ExampleOpenVariable() {
@@ -67,7 +67,7 @@ func ExampleOpenVariableV2() {
 
 func Example_openVariableFromURL() {
 	// PRAGMA: This example is used on gocloud.dev; PRAGMA comments adjust how it is shown and can be ignored.
-	// PRAGMA: On gocloud.dev, add a blank import: _ "gocloud.dev/runtimevar/awssecretsmanager"
+	// PRAGMA: On gocloud.dev, add a blank import: _ "github.com/hy9be/gocloud/runtimevar/awssecretsmanager"
 	// PRAGMA: On gocloud.dev, hide lines until the next blank line.
 	ctx := context.Background()
 

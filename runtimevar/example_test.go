@@ -19,11 +19,11 @@ import (
 	"fmt"
 	"log"
 
-	"gocloud.dev/runtimevar"
-	"gocloud.dev/runtimevar/constantvar"
-	"gocloud.dev/secrets"
+	"github.com/hy9be/gocloud/runtimevar"
+	"github.com/hy9be/gocloud/runtimevar/constantvar"
+	"github.com/hy9be/gocloud/secrets"
 
-	_ "gocloud.dev/runtimevar/gcpruntimeconfig"
+	_ "github.com/hy9be/gocloud/runtimevar/gcpruntimeconfig"
 	runtimeconfig "google.golang.org/genproto/googleapis/cloud/runtimeconfig/v1beta1"
 	"google.golang.org/grpc/status"
 )

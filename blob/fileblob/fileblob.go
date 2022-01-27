@@ -52,7 +52,7 @@
 //  - Attributes: os.FileInfo
 //  - CopyOptions.BeforeCopy: *os.File
 //  - WriterOptions.BeforeWrite: *os.File
-package fileblob // import "gocloud.dev/blob/fileblob"
+package fileblob // import "github.com/hy9be/gocloud/blob/fileblob"
 
 import (
 	"context"
@@ -72,11 +72,11 @@ import (
 	"strings"
 	"time"
 
-	"gocloud.dev/blob"
-	"gocloud.dev/blob/driver"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/escape"
-	"gocloud.dev/internal/gcerr"
+	"github.com/hy9be/gocloud/blob"
+	"github.com/hy9be/gocloud/blob/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/escape"
+	"github.com/hy9be/gocloud/internal/gcerr"
 )
 
 const defaultPageSize = 1000

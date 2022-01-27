@@ -18,9 +18,9 @@ import (
 	"context"
 	"log"
 
-	"gocloud.dev/docstore"
-	"gocloud.dev/docstore/gcpfirestore"
-	"gocloud.dev/gcp"
+	"github.com/hy9be/gocloud/docstore"
+	"github.com/hy9be/gocloud/docstore/gcpfirestore"
+	"github.com/hy9be/gocloud/gcp"
 )
 
 func ExampleOpenCollection() {
@@ -78,7 +78,7 @@ func ExampleOpenCollectionWithNameFunc() {
 
 func Example_openCollectionFromURL() {
 	// PRAGMA: This example is used on gocloud.dev; PRAGMA comments adjust how it is shown and can be ignored.
-	// PRAGMA: On gocloud.dev, add a blank import: _ "gocloud.dev/docstore/gcpfirestore"
+	// PRAGMA: On gocloud.dev, add a blank import: _ "github.com/hy9be/gocloud/docstore/gcpfirestore"
 	// PRAGMA: On gocloud.dev, hide lines until the next blank line.
 	ctx := context.Background()
 

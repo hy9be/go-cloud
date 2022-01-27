@@ -17,9 +17,9 @@ package driver
 import (
 	"reflect"
 
-	"gocloud.dev/docstore/internal/fields"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/gcerr"
+	"github.com/hy9be/gocloud/docstore/internal/fields"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/gcerr"
 )
 
 // A Document is a lightweight wrapper around either a map[string]interface{} or a

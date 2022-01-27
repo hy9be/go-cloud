@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-module gocloud.dev/runtimevar/etcdvar
+module github.com/hy9be/gocloud/runtimevar/etcdvar
 
 go 1.12
 
@@ -43,4 +43,4 @@ require (
 	google.golang.org/grpc/examples v0.0.0-20210805213004-fc30d5b571f5 // indirect
 )
 
-replace gocloud.dev => ../../
+replace github.com/hy9be/gocloud => ../../

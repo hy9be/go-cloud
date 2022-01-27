@@ -32,13 +32,13 @@ import (
 	"strings"
 	"time"
 
-	"gocloud.dev/blob"
-	_ "gocloud.dev/blob/fileblob"
-	"gocloud.dev/docstore"
-	_ "gocloud.dev/docstore/memdocstore"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/pubsub"
-	_ "gocloud.dev/pubsub/mempubsub"
+	"github.com/hy9be/gocloud/blob"
+	_ "github.com/hy9be/gocloud/blob/fileblob"
+	"github.com/hy9be/gocloud/docstore"
+	_ "github.com/hy9be/gocloud/docstore/memdocstore"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/pubsub"
+	_ "github.com/hy9be/gocloud/pubsub/mempubsub"
 )
 
 // A processor holds the state for processing images.

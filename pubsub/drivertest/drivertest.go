@@ -14,7 +14,7 @@
 
 // Package drivertest provides a conformance test for implementations of
 // driver.
-package drivertest // import "gocloud.dev/pubsub/drivertest"
+package drivertest // import "github.com/hy9be/gocloud/pubsub/drivertest"
 
 import (
 	"bytes"
@@ -27,12 +27,12 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/escape"
-	"gocloud.dev/internal/retry"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/batcher"
-	"gocloud.dev/pubsub/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/escape"
+	"github.com/hy9be/gocloud/internal/retry"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/batcher"
+	"github.com/hy9be/gocloud/pubsub/driver"
 	"golang.org/x/sync/errgroup"
 )
 

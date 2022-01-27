@@ -58,7 +58,7 @@
 //      (V1) *s3.GetObjectInput; (V2) *s3v2.GetObjectInput, when Options.Method == http.MethodGet, or
 //      (V1) *s3.PutObjectInput; (V2) *s3v2.PutObjectInput, when Options.Method == http.MethodPut, or
 //      (V1) *s3.DeleteObjectInput; (V2) [not supported] when Options.Method == http.MethodDelete
-package s3blob // import "gocloud.dev/blob/s3blob"
+package s3blob // import "github.com/hy9be/gocloud/blob/s3blob"
 
 import (
 	"context"
@@ -84,12 +84,12 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
 	"github.com/aws/smithy-go"
 	"github.com/google/wire"
-	gcaws "gocloud.dev/aws"
-	"gocloud.dev/blob"
-	"gocloud.dev/blob/driver"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/escape"
-	"gocloud.dev/internal/gcerr"
+	gcaws "github.com/hy9be/gocloud/aws"
+	"github.com/hy9be/gocloud/blob"
+	"github.com/hy9be/gocloud/blob/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/escape"
+	"github.com/hy9be/gocloud/internal/gcerr"
 )
 
 const defaultPageSize = 1000

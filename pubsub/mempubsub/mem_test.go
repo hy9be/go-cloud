@@ -19,8 +19,8 @@ import (
 	"testing"
 	"time"
 
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/driver"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/driver"
 )
 
 func TestReceive(t *testing.T) {

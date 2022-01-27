@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/hy9be/gocloud/gcerrors"
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/trace"
-	"gocloud.dev/gcerrors"
 )
 
 // Call holds the expected contents of a measured call.

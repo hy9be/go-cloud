@@ -20,8 +20,8 @@ import (
 
 	"github.com/Azure/azure-storage-blob-go/azblob"
 	"github.com/Azure/go-autorest/autorest/azure/auth"
-	"gocloud.dev/blob"
-	"gocloud.dev/blob/azureblob"
+	"github.com/hy9be/gocloud/blob"
+	"github.com/hy9be/gocloud/blob/azureblob"
 )
 
 func ExampleOpenBucket() {
@@ -92,7 +92,7 @@ func ExampleOpenBucket_usingSASToken() {
 
 func Example_openBucketFromURL() {
 	// PRAGMA: This example is used on gocloud.dev; PRAGMA comments adjust how it is shown and can be ignored.
-	// PRAGMA: On gocloud.dev, add a blank import: _ "gocloud.dev/blob/azureblob"
+	// PRAGMA: On gocloud.dev, add a blank import: _ "github.com/hy9be/gocloud/blob/azureblob"
 	// PRAGMA: On gocloud.dev, hide lines until the next blank line.
 	ctx := context.Background()
 

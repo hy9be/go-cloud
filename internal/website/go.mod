@@ -1,4 +1,4 @@
-module gocloud.dev/internal/website
+module github.com/hy9be/gocloud/internal/website
 
 go 1.12
 

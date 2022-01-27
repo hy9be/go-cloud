@@ -23,7 +23,7 @@ import (
 	"reflect"
 	"time"
 
-	"gocloud.dev/docstore/driver"
+	"github.com/hy9be/gocloud/docstore/driver"
 	pb "google.golang.org/genproto/googleapis/firestore/v1"
 	"google.golang.org/genproto/googleapis/type/latlng"
 	tspb "google.golang.org/protobuf/types/known/timestamppb"

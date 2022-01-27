@@ -19,8 +19,8 @@ import (
 	"log"
 
 	"github.com/hashicorp/vault/api"
-	"gocloud.dev/secrets"
-	"gocloud.dev/secrets/hashivault"
+	"github.com/hy9be/gocloud/secrets"
+	"github.com/hy9be/gocloud/secrets/hashivault"
 )
 
 func ExampleOpenKeeper() {
@@ -46,7 +46,7 @@ func ExampleOpenKeeper() {
 
 func Example_openFromURL() {
 	// PRAGMA: This example is used on gocloud.dev; PRAGMA comments adjust how it is shown and can be ignored.
-	// PRAGMA: On gocloud.dev, add a blank import: _ "gocloud.dev/secrets/hashivault"
+	// PRAGMA: On gocloud.dev, add a blank import: _ "github.com/hy9be/gocloud/secrets/hashivault"
 	// PRAGMA: On gocloud.dev, hide lines until the next blank line.
 	ctx := context.Background()
 

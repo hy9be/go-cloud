@@ -22,7 +22,7 @@ import (
 	"sync"
 	"testing"
 
-	"gocloud.dev/server/health"
+	"github.com/hy9be/gocloud/server/health"
 )
 
 var _ = health.Checker((*Checker)(nil))

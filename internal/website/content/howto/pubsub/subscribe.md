@@ -32,8 +32,8 @@ and a service-specific URL pointing to the topic, making sure you
 import (
     "context"
 
-    "gocloud.dev/pubsub"
-    _ "gocloud.dev/pubsub/<driver>"
+    "github.com/hy9be/gocloud/pubsub"
+    _ "github.com/hy9be/gocloud/pubsub/<driver>"
 )
 ...
 ctx := context.Background()
@@ -54,7 +54,7 @@ control over the connection settings, you can call the constructor function in
 the driver package directly (like `gcppubsub.OpenSubscription`).
 
 ```go
-import "gocloud.dev/pubsub/<driver>"
+import "github.com/hy9be/gocloud/pubsub/<driver>"
 ...
 subs, err := <driver>.OpenSubscription(...)
 ...
@@ -78,12 +78,12 @@ A simple subscriber that operates on
 [messages](https://godoc.org/gocloud.dev/pubsub#Message) serially looks like
 this:
 
-{{< goexample src="gocloud.dev/pubsub.ExampleSubscription_Receive" imports="0" >}}
+{{< goexample src="github.com/hy9be/gocloud/pubsub.ExampleSubscription_Receive" imports="0" >}}
 
 If you want your subscriber to operate on incoming messages concurrently,
 you can start multiple goroutines:
 
-{{< goexample src="gocloud.dev/pubsub.ExampleSubscription_Receive_concurrent" imports="0" >}}
+{{< goexample src="github.com/hy9be/gocloud/pubsub.ExampleSubscription_Receive_concurrent" imports="0" >}}
 
 Note that the [semantics of message delivery][] can vary by backing service.
 
@@ -113,7 +113,7 @@ alternatives, including using environment variables.
 [GCP creds]: https://cloud.google.com/docs/authentication/production
 [`gcloud auth application-default login`]: https://cloud.google.com/sdk/gcloud/reference/auth/application-default/login
 
-{{< goexample "gocloud.dev/pubsub/gcppubsub.Example_openSubscriptionFromURL" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/gcppubsub.Example_openSubscriptionFromURL" >}}
 
 #### Google Cloud Pub/Sub Constructor {#gcp-ctor}
 
@@ -122,7 +122,7 @@ subscription. You must first obtain [GCP credentials][GCP creds] and then
 create a gRPC connection to Cloud Pub/Sub. (This gRPC connection can be
 reused among subscriptions.)
 
-{{< goexample "gocloud.dev/pubsub/gcppubsub.ExampleOpenSubscription" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/gcppubsub.ExampleOpenSubscription" >}}
 
 [`gcppubsub.OpenSubscription`]: https://godoc.org/gocloud.dev/pubsub/gcppubsub#OpenSubscription
 
@@ -142,7 +142,7 @@ alternatives, including using environment variables.
 
 [AWS Session]: https://docs.aws.amazon.com/sdk-for-go/api/aws/session/
 
-{{< goexample "gocloud.dev/pubsub/awssnssqs.Example_openSubscriptionFromURL" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/awssnssqs.Example_openSubscriptionFromURL" >}}
 
 If your messages are being sent to SQS directly, or if they are being delivered
 via an SNS topic with `RawMessageDelivery` enabled, set a `raw=true` query
@@ -164,7 +164,7 @@ or the [SQS publshing guide][] for more details.
 The [`awssnssqs.OpenSubscription`][] constructor opens an SQS queue. You must
 first create an [AWS session][] with the same region as your topic:
 
-{{< goexample "gocloud.dev/pubsub/awssnssqs.ExampleOpenSubscription" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/awssnssqs.ExampleOpenSubscription" >}}
 
 [`awssnssqs.OpenSubscription`]: https://godoc.org/gocloud.dev/pubsub/awssnssqs#OpenSubscription
 [AWS session]: https://docs.aws.amazon.com/sdk-for-go/api/aws/session/
@@ -178,7 +178,7 @@ subscription name in the `subscription` query parameter.
 `SERVICEBUS_CONNECTION_STRING` to obtain the Service Bus Connection String
 you need to copy [from the Azure portal][Azure connection string].
 
-{{< goexample "gocloud.dev/pubsub/azuresb.Example_openSubscriptionFromURL" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/azuresb.Example_openSubscriptionFromURL" >}}
 
 [AMQP 1.0]: https://www.amqp.org/
 [Azure connection string]: https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions#get-the-connection-string
@@ -192,7 +192,7 @@ subscription. You must first connect to the topic and subscription using the
 `azuresb.OpenSubscription`. There are also helper functions in the `azuresb`
 package to make this easier.
 
-{{< goexample "gocloud.dev/pubsub/azuresb.ExampleOpenSubscription" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/azuresb.ExampleOpenSubscription" >}}
 
 [`azuresb.OpenSubscription`]: https://godoc.org/gocloud.dev/pubsub/azuresb#OpenSubscription
 [Azure Service Bus library]: https://github.com/Azure/azure-service-bus-go
@@ -204,7 +204,7 @@ AMQP spoken by [RabbitMQ][]. A RabbitMQ URL only includes the queue name.
 The RabbitMQ's server is discovered from the `RABBIT_SERVER_URL` environment
 variable (which is something like `amqp://guest:guest@localhost:5672/`).
 
-{{< goexample "gocloud.dev/pubsub/rabbitpubsub.Example_openSubscriptionFromURL" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/rabbitpubsub.Example_openSubscriptionFromURL" >}}
 
 [AMQP 0.9.1]: https://www.rabbitmq.com/protocol.html
 [RabbitMQ]: https://www.rabbitmq.com
@@ -214,7 +214,7 @@ variable (which is something like `amqp://guest:guest@localhost:5672/`).
 The [`rabbitpubsub.OpenSubscription`][] constructor opens a RabbitMQ queue.
 You must first create an [`*amqp.Connection`][] to your RabbitMQ instance.
 
-{{< goexample "gocloud.dev/pubsub/rabbitpubsub.ExampleOpenSubscription" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/rabbitpubsub.ExampleOpenSubscription" >}}
 
 [`*amqp.Connection`]: https://godoc.org/github.com/streadway/amqp#Connection
 [`rabbitpubsub.OpenSubscription`]: https://godoc.org/gocloud.dev/pubsub/rabbitpubsub#OpenSubscription
@@ -225,7 +225,7 @@ The Go CDK can publish to a [NATS][] subject. A NATS URL only includes the
 subject name. The NATS server is discovered from the `NATS_SERVER_URL`
 environment variable (which is something like `nats://nats.example.com`).
 
-{{< goexample "gocloud.dev/pubsub/natspubsub.Example_openSubscriptionFromURL" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/natspubsub.Example_openSubscriptionFromURL" >}}
 
 NATS guarantees at-most-once delivery; it will never redeliver a message.
 Therefore, `Message.Ack` is a no-op.
@@ -244,7 +244,7 @@ subscribing to messages coming from a source not using the Go CDK.
 The [`natspubsub.OpenSubscription`][] constructor opens a NATS subject as a
 topic. You must first create an [`*nats.Conn`][] to your NATS instance.
 
-{{< goexample "gocloud.dev/pubsub/natspubsub.ExampleOpenSubscription" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/natspubsub.ExampleOpenSubscription" >}}
 
 [`*nats.Conn`]: https://godoc.org/github.com/nats-io/go-nats#Conn
 [`natspubsub.OpenSubscription`]: https://godoc.org/gocloud.dev/pubsub/natspubsub#OpenSubscription
@@ -258,7 +258,7 @@ The brokers in the Kafka cluster are discovered from the
 `KAFKA_BROKERS` environment variable (which is a comma-delimited list of
 hosts, something like `1.2.3.4:9092,5.6.7.8:9092`).
 
-{{< goexample "gocloud.dev/pubsub/kafkapubsub.Example_openSubscriptionFromURL" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/kafkapubsub.Example_openSubscriptionFromURL" >}}
 
 [Kafka]: https://kafka.apache.org/
 
@@ -272,7 +272,7 @@ exposes many knobs that can affect performance and semantics; review and set
 them carefully. [`kafkapubsub.MinimalConfig`][] provides a minimal config to
 get you started.
 
-{{< goexample "gocloud.dev/pubsub/kafkapubsub.ExampleOpenSubscription" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/kafkapubsub.ExampleOpenSubscription" >}}
 
 [`*sarama.Config`]: https://godoc.org/github.com/Shopify/sarama#Config
 [`kafkapubsub.OpenSubscription`]: https://godoc.org/gocloud.dev/pubsub/kafkapubsub#OpenSubscription
@@ -286,7 +286,7 @@ the same name will receive messages posted to that topic. For instance, if
 you open a topic `mem://topicA` and open two subscriptions with
 `mem://topicA`, you will have two subscriptions to the same topic.
 
-{{< goexample "gocloud.dev/pubsub/mempubsub.Example_openSubscriptionFromURL" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/mempubsub.Example_openSubscriptionFromURL" >}}
 
 #### In-Memory Constructor {#mem-ctor}
 
@@ -296,7 +296,7 @@ You will also need to pass an acknowledgement deadline: once a message is
 received, if it is not acknowledged after the deadline elapses, then it will be
 redelivered.
 
-{{< goexample "gocloud.dev/pubsub/mempubsub.ExampleNewSubscription" >}}
+{{< goexample "github.com/hy9be/gocloud/pubsub/mempubsub.ExampleNewSubscription" >}}
 
 [`mempubsub.NewSubscription` function]: https://godoc.org/gocloud.dev/pubsub/mempubsub#NewSubscription
 [publish-mem-ctor]: {{< ref "./publish.md#mem-ctor" >}}

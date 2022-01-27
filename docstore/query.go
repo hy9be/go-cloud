@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"time"
 
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/internal/gcerr"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/internal/gcerr"
 )
 
 // Query represents a query over a collection.

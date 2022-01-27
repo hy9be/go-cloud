@@ -36,7 +36,7 @@
 // As
 //
 // filevar does not support any types for As.
-package filevar // import "gocloud.dev/runtimevar/filevar"
+package filevar // import "github.com/hy9be/gocloud/runtimevar/filevar"
 
 import (
 	"bytes"
@@ -51,9 +51,9 @@ import (
 	"time"
 
 	"github.com/fsnotify/fsnotify"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/runtimevar"
-	"gocloud.dev/runtimevar/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/runtimevar"
+	"github.com/hy9be/gocloud/runtimevar/driver"
 )
 
 func init() {

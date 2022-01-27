@@ -42,7 +42,7 @@
 //  - Message.BeforeSend: None.
 //  - Message.AfterSend: None.
 //  - Message: *nats.Msg
-package natspubsub // import "gocloud.dev/pubsub/natspubsub"
+package natspubsub // import "github.com/hy9be/gocloud/pubsub/natspubsub"
 
 import (
 	"bytes"
@@ -58,10 +58,10 @@ import (
 	"time"
 
 	"github.com/nats-io/nats.go"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/batcher"
-	"gocloud.dev/pubsub/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/batcher"
+	"github.com/hy9be/gocloud/pubsub/driver"
 )
 
 var errNotInitialized = errors.New("natspubsub: topic not initialized")

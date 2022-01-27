@@ -18,7 +18,7 @@ import (
 	"context"
 	"log"
 
-	"gocloud.dev/mysql"
+	"github.com/hy9be/gocloud/mysql"
 )
 
 func ExampleOpen() {

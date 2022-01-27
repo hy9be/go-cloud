@@ -17,7 +17,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"gocloud.dev/internal/openurl"
+	"github.com/hy9be/gocloud/internal/openurl"
 )
 
 func TestSchemeMap(t *testing.T) {

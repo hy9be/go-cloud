@@ -25,14 +25,14 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/hy9be/gocloud/docstore"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/docstore/drivertest"
+	"github.com/hy9be/gocloud/internal/gcerr"
+	"github.com/hy9be/gocloud/internal/testing/setup"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"gocloud.dev/docstore"
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/docstore/drivertest"
-	"gocloud.dev/internal/gcerr"
-	"gocloud.dev/internal/testing/setup"
 )
 
 const (

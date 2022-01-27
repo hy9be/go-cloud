@@ -24,7 +24,7 @@
 // see URLOpener.
 //
 // See https://gocloud.dev/concepts/urls/ for background information.
-package awsmysql // import "gocloud.dev/mysql/awsmysql"
+package awsmysql // import "github.com/hy9be/gocloud/mysql/awsmysql"
 
 import (
 	"context"
@@ -38,8 +38,8 @@ import (
 	"contrib.go.opencensus.io/integrations/ocsql"
 	"github.com/go-sql-driver/mysql"
 	"github.com/google/wire"
-	"gocloud.dev/aws/rds"
-	gcmysql "gocloud.dev/mysql"
+	"github.com/hy9be/gocloud/aws/rds"
+	gcmysql "github.com/hy9be/gocloud/mysql"
 )
 
 // Set is a Wire provider set that provides a *sql.DB given
@@ -114,7 +114,7 @@ func (c *connector) Connect(ctx context.Context) (driver.Conn, error) {
 		}
 		// TODO(light): Avoid global registry once https://github.com/go-sql-driver/mysql/issues/771 is fixed.
 		tlsConfigName := fmt.Sprintf(
-			"gocloud.dev/mysql/awsmysql/%d",
+			"github.com/hy9be/gocloud/mysql/awsmysql/%d",
 			atomic.AddUint32(&tlsConfigCounter, 1),
 		)
 		err = mysql.RegisterTLSConfig(tlsConfigName, &tls.Config{

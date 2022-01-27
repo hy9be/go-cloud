@@ -25,15 +25,15 @@ import (
 	"time"
 
 	"github.com/google/subcommands"
-	"gocloud.dev/runtimevar"
+	"github.com/hy9be/gocloud/runtimevar"
 
 	// Import the runtimevar driver packages we want to be able to open.
-	_ "gocloud.dev/runtimevar/awsparamstore"
-	_ "gocloud.dev/runtimevar/blobvar"
-	_ "gocloud.dev/runtimevar/constantvar"
-	_ "gocloud.dev/runtimevar/filevar"
-	_ "gocloud.dev/runtimevar/gcpruntimeconfig"
-	_ "gocloud.dev/runtimevar/httpvar"
+	_ "github.com/hy9be/gocloud/runtimevar/awsparamstore"
+	_ "github.com/hy9be/gocloud/runtimevar/blobvar"
+	_ "github.com/hy9be/gocloud/runtimevar/constantvar"
+	_ "github.com/hy9be/gocloud/runtimevar/filevar"
+	_ "github.com/hy9be/gocloud/runtimevar/gcpruntimeconfig"
+	_ "github.com/hy9be/gocloud/runtimevar/httpvar"
 )
 
 const helpSuffix = `

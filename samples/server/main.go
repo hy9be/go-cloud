@@ -26,11 +26,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/hy9be/gocloud/gcp"
+	"github.com/hy9be/gocloud/server"
+	"github.com/hy9be/gocloud/server/health"
+	"github.com/hy9be/gocloud/server/sdserver"
 	"go.opencensus.io/trace"
-	"gocloud.dev/gcp"
-	"gocloud.dev/server"
-	"gocloud.dev/server/health"
-	"gocloud.dev/server/sdserver"
 )
 
 // GlobalMonitoredResource implements monitoredresource.Interface to provide a

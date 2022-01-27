@@ -26,10 +26,10 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/kms"
 	"github.com/aws/smithy-go"
-	"gocloud.dev/internal/testing/setup"
-	"gocloud.dev/secrets"
-	"gocloud.dev/secrets/driver"
-	"gocloud.dev/secrets/drivertest"
+	"github.com/hy9be/gocloud/internal/testing/setup"
+	"github.com/hy9be/gocloud/secrets"
+	"github.com/hy9be/gocloud/secrets/driver"
+	"github.com/hy9be/gocloud/secrets/drivertest"
 )
 
 const (

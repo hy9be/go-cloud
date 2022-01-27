@@ -25,7 +25,7 @@ import (
 	"strings"
 
 	"github.com/go-sql-driver/mysql"
-	"gocloud.dev/internal/openurl"
+	"github.com/hy9be/gocloud/internal/openurl"
 
 	"contrib.go.opencensus.io/integrations/ocsql"
 )

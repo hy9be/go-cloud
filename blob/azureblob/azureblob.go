@@ -87,13 +87,13 @@ import (
 	"github.com/Azure/go-autorest/autorest/azure"
 	"github.com/google/uuid"
 	"github.com/google/wire"
-	"gocloud.dev/blob"
-	"gocloud.dev/blob/driver"
-	"gocloud.dev/gcerrors"
+	"github.com/hy9be/gocloud/blob"
+	"github.com/hy9be/gocloud/blob/driver"
+	"github.com/hy9be/gocloud/gcerrors"
 
-	"gocloud.dev/internal/escape"
-	"gocloud.dev/internal/gcerr"
-	"gocloud.dev/internal/useragent"
+	"github.com/hy9be/gocloud/internal/escape"
+	"github.com/hy9be/gocloud/internal/gcerr"
+	"github.com/hy9be/gocloud/internal/useragent"
 )
 
 const (

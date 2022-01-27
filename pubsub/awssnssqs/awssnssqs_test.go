@@ -32,10 +32,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/sns"
 	"github.com/aws/aws-sdk-go/service/sqs"
 	"github.com/aws/smithy-go"
-	"gocloud.dev/internal/testing/setup"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/driver"
-	"gocloud.dev/pubsub/drivertest"
+	"github.com/hy9be/gocloud/internal/testing/setup"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/driver"
+	"github.com/hy9be/gocloud/pubsub/drivertest"
 )
 
 const (

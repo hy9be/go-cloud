@@ -21,7 +21,7 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/google/go-cmp/cmp"
-	gcaws "gocloud.dev/aws"
+	gcaws "github.com/hy9be/gocloud/aws"
 )
 
 func TestConfigFromURLParams(t *testing.T) {

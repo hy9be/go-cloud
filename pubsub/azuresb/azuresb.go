@@ -51,7 +51,7 @@
 //  - Message.AfterSend: None
 //  - Message: *servicebus.Message
 //  - Error: common.Retryable, *amqp.Error, *amqp.DetachError
-package azuresb // import "gocloud.dev/pubsub/azuresb"
+package azuresb // import "github.com/hy9be/gocloud/pubsub/azuresb"
 
 import (
 	"context"
@@ -68,10 +68,10 @@ import (
 	"github.com/Azure/azure-amqp-common-go/v3/uuid"
 	servicebus "github.com/Azure/azure-service-bus-go"
 	"github.com/Azure/go-amqp"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/batcher"
-	"gocloud.dev/pubsub/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/batcher"
+	"github.com/hy9be/gocloud/pubsub/driver"
 )
 
 const (

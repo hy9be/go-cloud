@@ -18,9 +18,9 @@ import (
 	"context"
 	"log"
 
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/natspubsub"
 	"github.com/nats-io/nats.go"
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/natspubsub"
 )
 
 func ExampleOpenTopic() {
@@ -85,7 +85,7 @@ func ExampleOpenQueueSubscription() {
 
 func Example_openTopicFromURL() {
 	// PRAGMA: This example is used on gocloud.dev; PRAGMA comments adjust how it is shown and can be ignored.
-	// PRAGMA: On gocloud.dev, add a blank import: _ "gocloud.dev/pubsub/natspubsub"
+	// PRAGMA: On gocloud.dev, add a blank import: _ "github.com/hy9be/gocloud/pubsub/natspubsub"
 	// PRAGMA: On gocloud.dev, hide lines until the next blank line.
 	ctx := context.Background()
 
@@ -101,7 +101,7 @@ func Example_openTopicFromURL() {
 
 func Example_openSubscriptionFromURL() {
 	// PRAGMA: This example is used on gocloud.dev; PRAGMA comments adjust how it is shown and can be ignored.
-	// PRAGMA: On gocloud.dev, add a blank import: _ "gocloud.dev/pubsub/natspubsub"
+	// PRAGMA: On gocloud.dev, add a blank import: _ "github.com/hy9be/gocloud/pubsub/natspubsub"
 	// PRAGMA: On gocloud.dev, hide lines until the next blank line.
 	ctx := context.Background()
 
@@ -117,7 +117,7 @@ func Example_openSubscriptionFromURL() {
 
 func Example_openQueueSubscriptionFromURL() {
 	// PRAGMA: This example is used on gocloud.dev; PRAGMA comments adjust how it is shown and can be ignored.
-	// PRAGMA: On gocloud.dev, add a blank import: _ "gocloud.dev/pubsub/natspubsub"
+	// PRAGMA: On gocloud.dev, add a blank import: _ "github.com/hy9be/gocloud/pubsub/natspubsub"
 	// PRAGMA: On gocloud.dev, hide lines until the next blank line.
 	ctx := context.Background()
 

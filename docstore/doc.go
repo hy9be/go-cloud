@@ -265,14 +265,14 @@
 //  - Query.Get (for the first query only; drivers may make additional calls while iterating over results)
 // All trace and metric names begin with the package import path.
 // The traces add the method name.
-// For example, "gocloud.dev/docstore/ActionList.Do".
+// For example, "github.com/hy9be/gocloud/docstore/ActionList.Do".
 // The metrics are "completed_calls", a count of completed method calls by driver,
 // method and status (error code); and "latency", a distribution of method latency
 // by driver and method.
-// For example, "gocloud.dev/docstore/latency".
+// For example, "github.com/hy9be/gocloud/docstore/latency".
 //
 // To enable trace collection in your application, see "Configure Exporter" at
 // https://opencensus.io/quickstart/go/tracing.
 // To enable metric collection in your application, see "Exporting stats" at
 // https://opencensus.io/quickstart/go/metrics.
-package docstore // import "gocloud.dev/docstore"
+package docstore // import "github.com/hy9be/gocloud/docstore"

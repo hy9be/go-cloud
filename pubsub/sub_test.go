@@ -17,8 +17,8 @@ import (
 	"context"
 	"testing"
 
-	"gocloud.dev/pubsub"
-	"gocloud.dev/pubsub/driver"
+	"github.com/hy9be/gocloud/pubsub"
+	"github.com/hy9be/gocloud/pubsub/driver"
 )
 
 // scriptedSub returns batches of messages in a predefined order from

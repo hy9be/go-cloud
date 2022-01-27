@@ -31,7 +31,7 @@
 // awssecretsmanager exposes the following types for As:
 //  - Snapshot: (V1) *secretsmanager.GetSecretValueOutput, *secretsmanager.DescribeSecretOutput, (V2) *secretsmanagerv2.GetSecretValueOutput, *secretsmanagerv2.DescribeSecretOutput
 //  - Error: (V1) awserr.Error, (V2) any error type returned by the service, notably smithy.APIError
-package awssecretsmanager // import "gocloud.dev/runtimevar/awssecretsmanager"
+package awssecretsmanager // import "github.com/hy9be/gocloud/runtimevar/awssecretsmanager"
 
 import (
 	"context"
@@ -52,10 +52,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/secretsmanager"
 	"github.com/aws/smithy-go"
 	"github.com/google/wire"
-	gcaws "gocloud.dev/aws"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/runtimevar"
-	"gocloud.dev/runtimevar/driver"
+	gcaws "github.com/hy9be/gocloud/aws"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/runtimevar"
+	"github.com/hy9be/gocloud/runtimevar/driver"
 )
 
 func init() {

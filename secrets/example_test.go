@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"log"
 
-	"gocloud.dev/secrets"
-	_ "gocloud.dev/secrets/gcpkms"
-	"gocloud.dev/secrets/localsecrets"
+	"github.com/hy9be/gocloud/secrets"
+	_ "github.com/hy9be/gocloud/secrets/gcpkms"
+	"github.com/hy9be/gocloud/secrets/localsecrets"
 	"google.golang.org/grpc/status"
 )
 

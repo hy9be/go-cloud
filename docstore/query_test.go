@@ -19,8 +19,8 @@ import (
 	"strings"
 	"testing"
 
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/gcerrors"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/gcerrors"
 )
 
 func TestQueryValidFilter(t *testing.T) {

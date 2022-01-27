@@ -32,14 +32,14 @@ import (
 //                          other modules
 var mainGomod = []byte("module gocloud.dev\n")
 
-var submodGomod = []byte(`module gocloud.dev/submod
+var submodGomod = []byte(`module github.com/hy9be/gocloud/submod
 
 require (
 	gocloud.dev v0.15.0
 )
 `)
 
-var samplesGomod = []byte(`module gocloud.dev/samples
+var samplesGomod = []byte(`module github.com/hy9be/gocloud/samples
 
 require (
 	gocloud.dev v0.15.0
@@ -120,7 +120,7 @@ func Test(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	if !strings.Contains(string(c), "gocloud.dev v1.8.99") || !strings.Contains(string(c), "gocloud.dev/submod v1.8.99") {
+	if !strings.Contains(string(c), "gocloud.dev v1.8.99") || !strings.Contains(string(c), "github.com/hy9be/gocloud/submod v1.8.99") {
 		t.Error("New versions for require not found in samples/go.mod")
 	}
 }

@@ -20,8 +20,8 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/docstore/drivertest"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/docstore/drivertest"
 	pb "google.golang.org/genproto/googleapis/firestore/v1"
 	"google.golang.org/protobuf/proto"
 )

@@ -22,7 +22,7 @@
 // see URLOpener.
 //
 // See https://gocloud.dev/concepts/urls/ for background information.
-package azuremysql // import "gocloud.dev/mysql/azuremysql"
+package azuremysql // import "github.com/hy9be/gocloud/mysql/azuremysql"
 
 import (
 	"context"
@@ -36,8 +36,8 @@ import (
 
 	"contrib.go.opencensus.io/integrations/ocsql"
 	"github.com/go-sql-driver/mysql"
-	"gocloud.dev/azure/azuredb"
-	cdkmysql "gocloud.dev/mysql"
+	"github.com/hy9be/gocloud/azure/azuredb"
+	cdkmysql "github.com/hy9be/gocloud/mysql"
 )
 
 // URLOpener opens Azure MySQL URLs
@@ -112,7 +112,7 @@ func (c *connector) Connect(ctx context.Context) (driver.Conn, error) {
 		tlsConfigNum := tlsConfigCounter.n
 		tlsConfigCounter.n++
 		tlsConfigCounter.mu.Unlock()
-		tlsConfigName := fmt.Sprintf("gocloud.dev/mysql/azuremysql/%d", tlsConfigNum)
+		tlsConfigName := fmt.Sprintf("github.com/hy9be/gocloud/mysql/azuremysql/%d", tlsConfigNum)
 		err = mysql.RegisterTLSConfig(tlsConfigName, &tls.Config{
 			RootCAs: certPool,
 		})

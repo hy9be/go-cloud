@@ -31,7 +31,7 @@
 //
 // awskms exposes the following type for As:
 //  - Error: (V1) awserr.Error, (V2) any error type returned by the service, notably smithy.APIError
-package awskms // import "gocloud.dev/secrets/awskms"
+package awskms // import "github.com/hy9be/gocloud/secrets/awskms"
 
 import (
 	"context"
@@ -50,10 +50,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/kms"
 	"github.com/aws/smithy-go"
 	"github.com/google/wire"
-	gcaws "gocloud.dev/aws"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/gcerr"
-	"gocloud.dev/secrets"
+	gcaws "github.com/hy9be/gocloud/aws"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/gcerr"
+	"github.com/hy9be/gocloud/secrets"
 )
 
 func init() {

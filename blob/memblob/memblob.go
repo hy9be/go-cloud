@@ -25,7 +25,7 @@
 // As
 //
 // memblob does not support any types for As.
-package memblob // import "gocloud.dev/blob/memblob"
+package memblob // import "github.com/hy9be/gocloud/blob/memblob"
 
 import (
 	"bytes"
@@ -41,9 +41,9 @@ import (
 	"sync"
 	"time"
 
-	"gocloud.dev/blob"
-	"gocloud.dev/blob/driver"
-	"gocloud.dev/gcerrors"
+	"github.com/hy9be/gocloud/blob"
+	"github.com/hy9be/gocloud/blob/driver"
+	"github.com/hy9be/gocloud/gcerrors"
 )
 
 const defaultPageSize = 1000

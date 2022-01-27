@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // Package server provides a preconfigured HTTP server with diagnostic hooks.
-package server // import "gocloud.dev/server"
+package server // import "github.com/hy9be/gocloud/server"
 
 import (
 	"context"
@@ -23,9 +23,9 @@ import (
 	"time"
 
 	"github.com/google/wire"
-	"gocloud.dev/server/driver"
-	"gocloud.dev/server/health"
-	"gocloud.dev/server/requestlog"
+	"github.com/hy9be/gocloud/server/driver"
+	"github.com/hy9be/gocloud/server/health"
+	"github.com/hy9be/gocloud/server/requestlog"
 
 	"go.opencensus.io/plugin/ochttp"
 	"go.opencensus.io/trace"

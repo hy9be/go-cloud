@@ -20,10 +20,10 @@ import (
 	"reflect"
 	"time"
 
+	"github.com/hy9be/gocloud/gcerrors"
 	"go.opencensus.io/stats"
 	"go.opencensus.io/tag"
 	"go.opencensus.io/trace"
-	"gocloud.dev/gcerrors"
 )
 
 // A Tracer supports OpenCensus tracing and latency metrics.

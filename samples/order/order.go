@@ -33,16 +33,16 @@ import (
 	"os"
 	"path/filepath"
 
-	"gocloud.dev/blob"
-	"gocloud.dev/docstore"
-	"gocloud.dev/pubsub"
+	"github.com/hy9be/gocloud/blob"
+	"github.com/hy9be/gocloud/docstore"
+	"github.com/hy9be/gocloud/pubsub"
 )
 
 var (
-	requestTopicURL = flag.String("request-topic", "mem://requests", "gocloud.dev/pubsub URL for request topic")
-	requestSubURL   = flag.String("request-sub", "mem://requests", "gocloud.dev/pubsub URL for request subscription")
-	bucketURL       = flag.String("bucket", "", "gocloud.dev/blob URL for image bucket")
-	collectionURL   = flag.String("collection", "mem://orders/ID", "gocloud.dev/docstore URL for order collection")
+	requestTopicURL = flag.String("request-topic", "mem://requests", "github.com/hy9be/gocloud/pubsub URL for request topic")
+	requestSubURL   = flag.String("request-sub", "mem://requests", "github.com/hy9be/gocloud/pubsub URL for request subscription")
+	bucketURL       = flag.String("bucket", "", "github.com/hy9be/gocloud/blob URL for image bucket")
+	collectionURL   = flag.String("collection", "mem://orders/ID", "github.com/hy9be/gocloud/docstore URL for order collection")
 
 	port         = flag.Int("port", 10538, "HTTP port for frontend")
 	runFrontend  = flag.Bool("frontend", true, "run the frontend")

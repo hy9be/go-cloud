@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"log"
 
-	"gocloud.dev/blob"
-	"gocloud.dev/blob/memblob"
+	"github.com/hy9be/gocloud/blob"
+	"github.com/hy9be/gocloud/blob/memblob"
 )
 
 func ExampleOpenBucket() {

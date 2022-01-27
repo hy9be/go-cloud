@@ -18,10 +18,10 @@ import (
 	"context"
 	"testing"
 
-	"gocloud.dev/docstore"
-	"gocloud.dev/docstore/memdocstore"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/internal/testing/octest"
+	"github.com/hy9be/gocloud/docstore"
+	"github.com/hy9be/gocloud/docstore/memdocstore"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/internal/testing/octest"
 )
 
 func TestOpenCensus(t *testing.T) {
@@ -44,9 +44,9 @@ func TestOpenCensus(t *testing.T) {
 	iter := coll.Query().Get(ctx)
 	iter.Stop()
 
-	const driver = "gocloud.dev/docstore/memdocstore"
+	const driver = "github.com/hy9be/gocloud/docstore/memdocstore"
 
-	diff := octest.Diff(te.Spans(), te.Counts(), "gocloud.dev/docstore", driver, []octest.Call{
+	diff := octest.Diff(te.Spans(), te.Counts(), "github.com/hy9be/gocloud/docstore", driver, []octest.Call{
 		{Method: "ActionList.Do", Code: gcerrors.OK},
 		{Method: "Query.Get", Code: gcerrors.OK},
 	})

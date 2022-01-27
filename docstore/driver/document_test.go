@@ -21,7 +21,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"gocloud.dev/gcerrors"
+	"github.com/hy9be/gocloud/gcerrors"
 )
 
 type S struct {

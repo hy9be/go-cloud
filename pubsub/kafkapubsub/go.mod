@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-module gocloud.dev/pubsub/kafkapubsub
+module github.com/hy9be/gocloud/pubsub/kafkapubsub
 
 go 1.12
 
 require (
 	github.com/Shopify/sarama v1.30.0
 	github.com/google/go-cmp v0.5.6
-	gocloud.dev v0.24.0
+	github.com/hy9be/gocloud v0.24.0
 )
 
-replace gocloud.dev => ../../
+replace github.com/hy9be/gocloud => ../../

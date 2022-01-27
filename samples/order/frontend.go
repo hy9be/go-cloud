@@ -28,14 +28,14 @@ import (
 	"strings"
 	"time"
 
-	"gocloud.dev/blob"
-	_ "gocloud.dev/blob/fileblob"
-	"gocloud.dev/docstore"
-	_ "gocloud.dev/docstore/memdocstore"
-	"gocloud.dev/pubsub"
-	_ "gocloud.dev/pubsub/mempubsub"
-	"gocloud.dev/server"
-	"gocloud.dev/server/requestlog"
+	"github.com/hy9be/gocloud/blob"
+	_ "github.com/hy9be/gocloud/blob/fileblob"
+	"github.com/hy9be/gocloud/docstore"
+	_ "github.com/hy9be/gocloud/docstore/memdocstore"
+	"github.com/hy9be/gocloud/pubsub"
+	_ "github.com/hy9be/gocloud/pubsub/mempubsub"
+	"github.com/hy9be/gocloud/server"
+	"github.com/hy9be/gocloud/server/requestlog"
 )
 
 // A frontend is a web server that takes image-processing orders.

@@ -14,7 +14,7 @@
 
 // Package requestlog provides an http.Handler that logs information
 // about requests.
-package requestlog // import "gocloud.dev/server/requestlog"
+package requestlog // import "github.com/hy9be/gocloud/server/requestlog"
 
 import (
 	"bufio"

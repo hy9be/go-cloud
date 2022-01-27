@@ -14,7 +14,7 @@
 
 // Package drivertest provides a conformance test for implementations of
 // driver.
-package drivertest // import "gocloud.dev/docstore/drivertest"
+package drivertest // import "github.com/hy9be/gocloud/docstore/drivertest"
 
 import (
 	"context"
@@ -29,10 +29,10 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/google/uuid"
-	"gocloud.dev/docstore"
-	ds "gocloud.dev/docstore"
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/gcerrors"
+	"github.com/hy9be/gocloud/docstore"
+	ds "github.com/hy9be/gocloud/docstore"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/gcerrors"
 	"google.golang.org/protobuf/proto"
 	tspb "google.golang.org/protobuf/types/known/timestamppb"
 )

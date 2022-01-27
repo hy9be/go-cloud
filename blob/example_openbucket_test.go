@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"log"
 
-	"gocloud.dev/blob"
-	_ "gocloud.dev/blob/memblob"
+	"github.com/hy9be/gocloud/blob"
+	_ "github.com/hy9be/gocloud/blob/memblob"
 )
 
 func Example_openFromURL() {
@@ -30,7 +30,7 @@ func Example_openFromURL() {
 	// This example uses "memblob", the in-memory implementation.
 	// We need to add a blank import line to register the memblob driver's
 	// URLOpener, which implements blob.BucketURLOpener:
-	// import _ "gocloud.dev/blob/memblob"
+	// import _ "github.com/hy9be/gocloud/blob/memblob"
 	// memblob registers for the "mem" scheme.
 	// All blob.OpenBucket URLs also work with "blob+" or "blob+bucket+" prefixes,
 	// e.g., "blob+mem://" or "blob+bucket+mem://".

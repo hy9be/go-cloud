@@ -18,8 +18,8 @@ import (
 	"context"
 	"testing"
 
-	"gocloud.dev/docstore"
-	"gocloud.dev/internal/testing/setup"
+	"github.com/hy9be/gocloud/docstore"
+	"github.com/hy9be/gocloud/internal/testing/setup"
 )
 
 func TestOpenCollectionFromURL(t *testing.T) {

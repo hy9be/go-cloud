@@ -2,6 +2,18 @@
 
 More details to come...
 
+Issues to fix - "ignoring python incompatible method" "ignoring python incompatible function"
+
+Error messages can be found from https://github.com/go-python/gopy/blob/master/bind/symbols.go
+
+1. gopy: not yet supporting variadic functions
+2. gopy: second result value must be of type error
+3. gopy: too many results to return
+4. gopy: return type is interface{}
+5. no such object [] in symbol table
+
+Test cases: https://github.com/go-python/gopy/tree/master/_examples/gopyerrors
+
 # The Go Cloud Development Kit (Go CDK)
 
 _Write once, run on any cloud ☁️_

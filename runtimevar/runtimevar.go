@@ -24,12 +24,12 @@
 // OpenCensus supports tracing and metric collection for multiple languages and
 // backend providers. See https://opencensus.io.
 //
-// This API collects an OpenCensus metric "gocloud.dev/runtimevar/value_changes",
+// This API collects an OpenCensus metric "github.com/hy9be/gocloud/runtimevar/value_changes",
 // a count of the number of times all variables have changed values, by driver.
 //
 // To enable metric collection in your application, see "Exporting stats" at
 // https://opencensus.io/quickstart/go/metrics.
-package runtimevar // import "gocloud.dev/runtimevar"
+package runtimevar // import "github.com/hy9be/gocloud/runtimevar"
 
 import (
 	"bytes"
@@ -45,14 +45,14 @@ import (
 	"sync"
 	"time"
 
+	"github.com/hy9be/gocloud/internal/gcerr"
+	"github.com/hy9be/gocloud/internal/oc"
+	"github.com/hy9be/gocloud/internal/openurl"
+	"github.com/hy9be/gocloud/runtimevar/driver"
+	"github.com/hy9be/gocloud/secrets"
 	"go.opencensus.io/stats"
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/tag"
-	"gocloud.dev/internal/gcerr"
-	"gocloud.dev/internal/oc"
-	"gocloud.dev/internal/openurl"
-	"gocloud.dev/runtimevar/driver"
-	"gocloud.dev/secrets"
 )
 
 // Snapshot contains a snapshot of a variable's value and metadata about it.
@@ -79,7 +79,7 @@ func (s *Snapshot) As(i interface{}) bool {
 	return s.asFunc(i)
 }
 
-const pkgName = "gocloud.dev/runtimevar"
+const pkgName = "github.com/hy9be/gocloud/runtimevar"
 
 var (
 	changeMeasure = stats.Int64(pkgName+"/value_changes", "Count of variable value changes",

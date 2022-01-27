@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"log"
 
-	"gocloud.dev/pubsub"
+	"github.com/hy9be/gocloud/pubsub"
 
 	pbraw "cloud.google.com/go/pubsub/apiv1"
 	pbapi "google.golang.org/genproto/googleapis/pubsub/v1"

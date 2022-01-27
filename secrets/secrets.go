@@ -29,27 +29,27 @@
 //  - Decrypt
 // All trace and metric names begin with the package import path.
 // The traces add the method name.
-// For example, "gocloud.dev/secrets/Encrypt".
+// For example, "github.com/hy9be/gocloud/secrets/Encrypt".
 // The metrics are "completed_calls", a count of completed method calls by driver,
 // method and status (error code); and "latency", a distribution of method latency
 // by driver and method.
-// For example, "gocloud.dev/secrets/latency".
+// For example, "github.com/hy9be/gocloud/secrets/latency".
 //
 // To enable trace collection in your application, see "Configure Exporter" at
 // https://opencensus.io/quickstart/go/tracing.
 // To enable metric collection in your application, see "Exporting stats" at
 // https://opencensus.io/quickstart/go/metrics.
-package secrets // import "gocloud.dev/secrets"
+package secrets // import "github.com/hy9be/gocloud/secrets"
 
 import (
 	"context"
 	"net/url"
 	"sync"
 
-	"gocloud.dev/internal/gcerr"
-	"gocloud.dev/internal/oc"
-	"gocloud.dev/internal/openurl"
-	"gocloud.dev/secrets/driver"
+	"github.com/hy9be/gocloud/internal/gcerr"
+	"github.com/hy9be/gocloud/internal/oc"
+	"github.com/hy9be/gocloud/internal/openurl"
+	"github.com/hy9be/gocloud/secrets/driver"
 )
 
 // Keeper does encryption and decryption. To create a Keeper, use constructors
@@ -80,7 +80,7 @@ func newKeeper(k driver.Keeper) *Keeper {
 	}
 }
 
-const pkgName = "gocloud.dev/secrets"
+const pkgName = "github.com/hy9be/gocloud/secrets"
 
 var (
 	latencyMeasure = oc.LatencyMeasure(pkgName)

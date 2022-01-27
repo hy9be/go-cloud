@@ -25,13 +25,13 @@ import (
 	"os"
 
 	"github.com/google/subcommands"
-	"gocloud.dev/blob"
+	"github.com/hy9be/gocloud/blob"
 
 	// Import the blob driver packages we want to be able to open.
-	_ "gocloud.dev/blob/azureblob"
-	_ "gocloud.dev/blob/fileblob"
-	_ "gocloud.dev/blob/gcsblob"
-	_ "gocloud.dev/blob/s3blob"
+	_ "github.com/hy9be/gocloud/blob/azureblob"
+	_ "github.com/hy9be/gocloud/blob/fileblob"
+	_ "github.com/hy9be/gocloud/blob/gcsblob"
+	_ "github.com/hy9be/gocloud/blob/s3blob"
 )
 
 const helpSuffix = `

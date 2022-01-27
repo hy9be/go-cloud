@@ -24,8 +24,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/docstore/drivertest"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/docstore/drivertest"
 )
 
 func TestPlanQuery(t *testing.T) {

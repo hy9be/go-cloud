@@ -25,15 +25,15 @@ import (
 	"os"
 
 	"github.com/google/subcommands"
-	"gocloud.dev/pubsub"
+	"github.com/hy9be/gocloud/pubsub"
 
 	// Import the pubsub driver packages we want to be able to open.
-	_ "gocloud.dev/pubsub/awssnssqs"
-	_ "gocloud.dev/pubsub/azuresb"
-	_ "gocloud.dev/pubsub/gcppubsub"
-	_ "gocloud.dev/pubsub/kafkapubsub"
-	_ "gocloud.dev/pubsub/natspubsub"
-	_ "gocloud.dev/pubsub/rabbitpubsub"
+	_ "github.com/hy9be/gocloud/pubsub/awssnssqs"
+	_ "github.com/hy9be/gocloud/pubsub/azuresb"
+	_ "github.com/hy9be/gocloud/pubsub/gcppubsub"
+	_ "github.com/hy9be/gocloud/pubsub/kafkapubsub"
+	_ "github.com/hy9be/gocloud/pubsub/natspubsub"
+	_ "github.com/hy9be/gocloud/pubsub/rabbitpubsub"
 )
 
 const helpSuffix = `

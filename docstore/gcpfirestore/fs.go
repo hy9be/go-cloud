@@ -63,7 +63,7 @@
 // https://cloud.google.com/firestore/docs/query-data/indexing for details.
 //
 // See https://cloud.google.com/firestore/docs/query-data/queries for more information on Firestore queries.
-package gcpfirestore // import "gocloud.dev/docstore/gcpfirestore"
+package gcpfirestore // import "github.com/hy9be/gocloud/docstore/gcpfirestore"
 
 import (
 	"bytes"
@@ -77,12 +77,12 @@ import (
 
 	vkit "cloud.google.com/go/firestore/apiv1"
 	"github.com/google/wire"
-	"gocloud.dev/docstore"
-	"gocloud.dev/docstore/driver"
-	"gocloud.dev/gcerrors"
-	"gocloud.dev/gcp"
-	"gocloud.dev/internal/gcerr"
-	"gocloud.dev/internal/useragent"
+	"github.com/hy9be/gocloud/docstore"
+	"github.com/hy9be/gocloud/docstore/driver"
+	"github.com/hy9be/gocloud/gcerrors"
+	"github.com/hy9be/gocloud/gcp"
+	"github.com/hy9be/gocloud/internal/gcerr"
+	"github.com/hy9be/gocloud/internal/useragent"
 	"google.golang.org/api/option"
 	pb "google.golang.org/genproto/googleapis/firestore/v1"
 	"google.golang.org/grpc"

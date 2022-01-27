@@ -12,7 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-module gocloud.dev
+module github.com/hy9be/go-cloud
+
+//replace gocloud.dev => /Users/yhw/Codes/github.com/go-cloud-hy9be
 
 go 1.12
 
